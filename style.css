@@ -1,81 +1,33 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-@media screen and (min-width: 481px) and (max-width: 768px){
-     body {
-    background-size: cover;
-}
-}
-.hero {
-    background-image:  url(./images/Warm\ Modern\ Restaurant\ Interior.png);
-    filter: brightness(85%);
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-}
-
-.navbar {
-    width: 100%;
-    padding: 25px 50px;
-
+.gallery{
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    justify-content: center;
+    padding: 50px;
+    gap: 15px;
 }
-
-.navbar h3 {
-    color: rgb(255, 149, 0);
+.gallery img{
+    border-radius: 20px;
+    width: 200px;
+    height: 150px;
+    transition: 0.3s;
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
-
-.navbar ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+img:hover{
+    opacity: 0.8;
 }
-
-.navbar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-family: sans-serif;
-}
-
-.navbar a:hover {
-    background: linear-gradient(red ,orange , blue);
-    border-radius: 50px;
-    transition: 1s;
-    padding: 5px;
-    color: black;
-}
-.texts {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: rgb(248, 225, 225);
-}
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-button {
-    background: linear-gradient(red , orange);
-    color: rgb(243, 242, 246);
-    padding: 5px;
-    border-radius: 5px;
-    margin-top: 10px;
-    border:none;
-}
-button:hover {
-    border-radius: 50px;
-    background: linear-gradient(red , black , orange);
-    transition: 2s;
-    cursor: pointer;
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
